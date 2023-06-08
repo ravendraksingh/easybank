@@ -1,0 +1,24 @@
+.header {
+  color: var(--color-very-light-gray);
+  padding-right: 36px;
+  padding-left: 36px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navitems {
+  display: flex;
+}
+.navitems a {
+  margin-right: 10px;
+  color: hsl(233, 8%, 62%);
+}
+@media screen and (min-width: 576px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

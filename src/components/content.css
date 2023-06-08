@@ -1,0 +1,124 @@
+:root {
+  --color-dark-blue: hsl(233, 26%, 24%);
+  --color-bright-cyan: hsl(192, 70%, 51%);
+  --color-gray: hsl(233, 8%, 62%);
+  --color-lime-green: hsl(136, 65%, 51%);
+  --color-grayish-blue: hsl(233, 8%, 62%);
+  --color-light-grayish-blue: hsl(220, 16%, 96%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+}
+.text-gray {
+  color: var(--color-gray);
+}
+.bg-light-gray-blue {
+  background-color: var(--color-light-grayish-blue);
+}
+.bg-very-light-gray {
+  background-color: var(--color-very-light-gray);
+}
+.content-box {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.content-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* padding-bottom: 3rem; */
+  position: relative;
+  z-index: -1;
+  top: -3rem;
+  overflow: hidden;
+}
+.images {
+  display: flex;
+  min-height: 300px;
+  background-image: url("/public/images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content-top > .info {
+  padding: 3rem 1rem;
+  /* position: relative; */
+  /* top: -15vh; */
+  padding-bottom: 0;
+}
+.img1 {
+  width: 100%;
+  z-index: -2;
+}
+.img2 {
+  width: auto;
+  height: auto;
+}
+.feature-box,
+.article-box {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.feature-box {
+  gap: 0;
+}
+.card-group {
+  margin-bottom: 0;
+}
+.card-group > .card {
+  margin: 0;
+}
+.card-text {
+  color: var(--color-gray);
+}
+.card {
+  border: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .content-top {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 0 0 5rem;
+    top: 0;
+    left: 0;
+  }
+  .content-top > .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0.4;
+  }
+  .content-top > .images {
+    display: flex;
+    flex: 0.6;
+    position: relative;
+    background-image: url("/public/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    /* background-size: cover; */
+    background-size: auto;
+    overflow: visible;
+  }
+  .img2 {
+    position: relative;
+    left: 5rem;
+    z-index: 5;
+    height: auto;
+    max-height: 400px;
+    width: auto;
+    text-align: center;
+  }
+  .content-box {
+    text-align: start;
+    padding: 5rem;
+  }
+  .card img {
+    max-width: fit-content;
+    aspect-ratio: 3/2;
+  }
+  .feature-box .card-body {
+    padding-left: 0;
+  }
+}
