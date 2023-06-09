@@ -81,7 +81,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 2em;
+    padding: 0 5rem;
     margin-top: 120px;
   }
   .info h1, p {
@@ -104,5 +104,8 @@
   .content-mid {
     padding: 2rem 5rem;
     z-index: -1;
+  }
+  .content-bottom {
+    padding: 3rem 5rem;
   }
 }

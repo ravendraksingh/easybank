@@ -97,7 +97,7 @@ const MainContent = () => {
           </Card>
         </CardGroup>
       </div>
-      <div className="content-box bg-very-light-gray">
+      <div className="content-box content-bottom bg-very-light-gray">
         <h3 className="mb-5">Latest Articles</h3>
         <CardGroup id="articles" className="article-box">
           <Card>
