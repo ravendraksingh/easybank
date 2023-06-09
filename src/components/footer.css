@@ -1,6 +1,8 @@
 .footer {
   background-color: hsl(233, 26%, 24%);
-  color: hsl(220, 16%, 96%);
+  /* background-color: gray; */
+  /* color: hsl(220, 16%, 96%); */
+  color: white;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -9,7 +11,7 @@
   padding-top: 36px;
   padding-bottom: 36px;
 }
-.footer-logo {
+.logo {
   height: 24px;
 }
 .iconbox {

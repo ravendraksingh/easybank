@@ -5,18 +5,8 @@ import RequestInviteButton from "./RequestInviteButton";
 
 const MainContent = () => {
   return (
-    <>
-      <div className="content-top"><img
-            src={process.env.PUBLIC_URL + "/images/image-mockups.png"}
-            className="img2"
-          />
-        {/* <div className="images"> */}
-          {/* <img
-            src={process.env.PUBLIC_URL + "/images/bg-intro-desktop.svg"}
-            className="img1"
-          /> */}
-          
-        {/* </div> */}
+    <div className="d-flex flex-column">
+      <div className="content-top">
         <div className="info">
           <h1>Next generation digital banking</h1>
           <p className="text-gray">
@@ -25,17 +15,22 @@ const MainContent = () => {
             more.
           </p>
           <div>
-            <RequestInviteButton small={false} />
+            <RequestInviteButton />
           </div>
+        </div>
+        <div className="mockups">
+          <img
+            src={process.env.PUBLIC_URL + "/images/image-mockups.png"}
+            className="img2"
+          />
         </div>
       </div>
       <div className="content-box content-mid bg-light-gray-blue">
-        <div>
+        <div className="col-12 col-md-6 text-center text-md-start">
           <h2>Why choose Easybank?</h2>
           <p className="text-gray m-0">
             We leverage Open Banking to turn your bank account into your
-            financial hub. <br />
-            Contorl your finances like never before.
+            financial hub.Contorl your finances like never before.
           </p>
           <br />
         </div>
@@ -166,7 +161,7 @@ const MainContent = () => {
           </Card>
         </CardGroup>
       </div>
-    </>
+    </div>
   );
 };
 

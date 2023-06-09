@@ -9,17 +9,10 @@ const Footer = () => {
         <div>
           <img
             src={process.env.PUBLIC_URL + "/images/logo.svg"}
-            className="footer-logo"
+            className="logo"
             style={{ color: "white" }}
           />
         </div>
-        {/* <div className="iconbox">
-          <img src={fbicon} />
-          <img src={yticon} />
-          <img src={twittericon} />
-          <img src={pinteresticon} />
-          <img src={iconinsta} />
-        </div> */}
       </div>
       <div className="textbox">
         <p>About Us</p>

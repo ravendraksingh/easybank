@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  z-index: 2;
 }
 .navitems {
   display: flex;
@@ -15,6 +16,11 @@
   margin-right: 10px;
   color: hsl(233, 8%, 62%);
 }
+.header .button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 576px) {
   .header {
     display: flex;
